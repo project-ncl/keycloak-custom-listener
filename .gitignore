@@ -1,0 +1,6 @@
+# Maven target folder
+target
+
+# Intellij crap
+.idea
+*.iml
