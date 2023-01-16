@@ -27,8 +27,11 @@ public class CustomEventListenerProviderFactory implements EventListenerProvider
 
     }
 
+    /**
+     * Name of the application on the Keycloak console
+     */
     @Override
     public String getId() {
-        return "custom-event-listener";
+        return "keycloak-custom-listener";
     }
 }

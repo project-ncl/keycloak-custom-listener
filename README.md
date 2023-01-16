@@ -19,5 +19,5 @@ $ mvn clean install
 
 # Acknowledgements
 This codebase is *heavily* inspired from
-[here](https://github.com/aboutbits/keycloak-extensions) and its [blog
+[aboutbits/keycloak-extensions](https://github.com/aboutbits/keycloak-extensions) and its [blog
 post](https://aboutbits.it/blog/2020-11-23-keycloak-custom-event-listener).
