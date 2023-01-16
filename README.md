@@ -15,7 +15,18 @@ $ mvn clean install
 1. Transfer the `target/keycloak-custom-listener.jar` to the `deployments`
    folder of your EAP server
 2. From the admin console, select your realm, then click on the 'Events' tab
-   and add 'keycloak-custom-listenere' as a listener. Then click 'Save'
+   and add 'keycloak-custom-listener' as a listener. Then click 'Save'
+
+# Logging format
+The events we are interested are of type:
+- Login, Logout, errors
+- admin events
+
+For login, logout, and errors, the log will have string 'pncType=LOGIN\_LOGOUT'
+and 'pncType=LOGIN\_LOGOUT\_ERROR'. For admin events, the log will have string
+'pncType=ADMIN\_EVENT'.
+
+This should help run specific queries on your logs for these events.
 
 # Acknowledgements
 This codebase is *heavily* inspired from
