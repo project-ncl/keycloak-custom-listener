@@ -52,7 +52,7 @@ public class CustomEventListenerProvider implements EventListenerProvider {
 
     @Override
     public void onEvent(AdminEvent adminEvent, boolean b) {
-        log.info("pncType=admin-event " + toStringAdminEvent(adminEvent));
+        log.info("pncType=ADMIN_EVENT " + toStringAdminEvent(adminEvent));
     }
 
     @Override
