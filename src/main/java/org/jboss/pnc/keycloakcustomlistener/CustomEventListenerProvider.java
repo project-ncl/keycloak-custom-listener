@@ -64,7 +64,7 @@ public class CustomEventListenerProvider implements EventListenerProvider {
         RealmModel realm = this.model.getRealm(event.getRealmId());
         String user = event.getUserId();
 
-        if (realm != null) {
+        if (realm != null && user != null) {
             UserModel userModel = this.session.users().getUserById(realm, event.getUserId());
             if (userModel != null) {
                 user = userModel.getUsername();
